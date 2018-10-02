@@ -12,7 +12,7 @@
         <Label Content="Door" HorizontalAlignment="Left" Margin="37,164,0,0" VerticalAlignment="Top"  Foreground="White"/>
         <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="111,98,0,0" VerticalAlignment="Top" Width="75" Click="OnAccuButtonClicked" />
         <Button x:Name="DoorButton" Content="OFF" HorizontalAlignment="Left" Margin="111,168,0,0" VerticalAlignment="Top" Width="75" Click="OnDoorButtonClicked"/>
-        <Label x:Name="AccuState" Content="Accu is off" HorizontalAlignment="Left" Margin="121,122,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8B8B8B"/>
+        <Label x:Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="121,122,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8B8B8B"/>
         <Label x:Name="DoorState" Content="Door is unlocked" HorizontalAlignment="Left" Margin="111,188,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8F8F8F"/>
         <Label Content="DASHBOARD" HorizontalAlignment="Left" Margin="136,22,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="38" Width="124" FontSize="20"/>
 

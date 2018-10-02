@@ -20,15 +20,34 @@ namespace NextCar
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Car nextCar;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            AccubaterryController accubaterryController = new AccubaterryController();
+
+            nextCar = new Car();
+            nextCar.setAccubaterryController(accubaterryController);
         }
 
 
         private void OnAccuButtonClicked(object sender, RoutedEventArgs e)
         {
-
+            Boolean powerIsOn = nextCar.powerIsReady();
+            if (powerIsOn)
+            {
+                this.nextCar.turnOfPower();
+                this.AccuState.Content = "no power";
+                this.AccuButton.Content = "OFF";
+            }
+            else
+            {
+                this.nextCar.turnOnPower();
+                this.AccuState.Content = "power is ready";
+                this.AccuButton.Content = "ON";
+            }
         }
 
         private void OnDoorButtonClicked(object sender, RoutedEventArgs e)
