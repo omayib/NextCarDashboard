@@ -1,10 +1,11 @@
-﻿using System;
+﻿using NextCar.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NextCar
+namespace NextCar.Controller
 {
     class DoorController
     {

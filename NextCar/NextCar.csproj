@@ -59,15 +59,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AccubaterryController.cs" />
+    <Compile Include="Controller\AccubaterryController.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Accubattery.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="Door.cs" />
-    <Compile Include="DoorController.cs" />
+    <Compile Include="Model\Accubattery.cs" />
+    <Compile Include="Application\Car.cs" />
+    <Compile Include="Model\Door.cs" />
+    <Compile Include="Controller\DoorController.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -99,8 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
