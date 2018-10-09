@@ -10,6 +10,12 @@ namespace NextCar
     {
 
         AccubaterryController accubaterryController;
+        DoorController doorController;
+
+        public void setDoorController(DoorController doorController)
+        {
+            this.doorController = doorController;
+        }
 
         public void setAccubaterryController(AccubaterryController accubaterryController)
         {
@@ -27,6 +33,31 @@ namespace NextCar
         public Boolean powerIsReady()
         {
             return this.accubaterryController.accubatterryIsOn();
+        }
+
+        public void closeTheDoor()
+        {
+            this.doorController.close();
+        }
+        public void openTheDoor()
+        {
+            this.doorController.open();
+        }
+        public void lockTheDoor()
+        {
+            this.doorController.activateLock();
+        }
+        public void unlockTheDoor()
+        {
+            this.doorController.unlock();
+        }
+        public bool doorIsClosed()
+        {
+            return this.doorController.isClose();
+        }
+        public bool doorIsLocked()
+        {
+            return this.doorController.isLocked();
         }
     }
 }

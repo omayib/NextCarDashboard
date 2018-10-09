@@ -27,9 +27,11 @@ namespace NextCar
             InitializeComponent();
 
             AccubaterryController accubaterryController = new AccubaterryController();
+            DoorController doorController = new DoorController();
 
             nextCar = new Car();
             nextCar.setAccubaterryController(accubaterryController);
+            nextCar.setDoorController(doorController);
         }
 
 
@@ -52,6 +54,22 @@ namespace NextCar
 
         private void OnDoorButtonClicked(object sender, RoutedEventArgs e)
         {
+            nextCar.closeTheDoor();
+
+            Boolean doorIsLocked = nextCar.doorIsLocked();
+            Boolean doorIsClosed = nextCar.doorIsClosed();
+            if (doorIsClosed && !doorIsLocked)
+            {
+                this.nextCar.lockTheDoor();
+                this.DoorState.Content = "door is locked";
+                this.DoorButton.Content = "ON";
+            }
+            else if(doorIsLocked && doorIsLocked)
+            {
+                this.nextCar.unlockTheDoor();
+                this.DoorState.Content = "door is unlocked";
+                this.DoorButton.Content = "OFF";
+            }
 
         }
 
