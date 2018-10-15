@@ -15,7 +15,7 @@
         <Label x:Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="121,122,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8B8B8B"/>
         <Label x:Name="DoorState" Content="Door is unlocked" HorizontalAlignment="Left" Margin="111,188,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8F8F8F"/>
         <Label Content="DASHBOARD" HorizontalAlignment="Left" Margin="136,22,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Height="38" Width="124" FontSize="20"/>
-        <Label Content="Mesin" HorizontalAlignment="Left" Margin="37,230,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Engine" HorizontalAlignment="Left" Margin="37,230,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="EngineButton" Content="OFF" HorizontalAlignment="Left" Margin="111,233,0,0" VerticalAlignment="Top" Width="75"/>
         <Label x:Name="EngineState" Content="Engine is off" HorizontalAlignment="Left" Margin="111,258,0,0" VerticalAlignment="Top" FontSize="10"  Foreground="#FF8F8F8F"/>
 

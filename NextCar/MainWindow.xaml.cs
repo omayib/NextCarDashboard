@@ -76,6 +76,20 @@ namespace NextCar
 
         private void OnStartButtonClicked(object sender, RoutedEventArgs e)
         {
+            /*
+             if(!powerIsOn){
+                Command.Writeln("Ups! Turn on the accu power, please")
+             }
+             if(!doorIsClosed){
+                Command.Writeln("Ups! Close the door, please")
+             }
+             if(!engineIsOn){
+                Command.Writeln("Ups! Turn on the engine, please")
+             }
+             if(powerIsOn && doorIsClosed && engineIsOn){
+                Command.Writeln("Broom! car is ready")
+             }
+             */
 
         }
     }
